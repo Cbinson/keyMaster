@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="keyMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +26,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="VcS-KC-vsC">
+            <objects>
+                <viewController storyboardIdentifier="LogInVC" id="aKT-ZY-A7s" customClass="LogInViewController" customModule="keyMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fGJ-k5-rpr"/>
+                        <viewControllerLayoutGuide type="bottom" id="PiJ-E1-vqp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kx2-YB-NOC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6KD-gM-OOe">
+                                <rect key="frame" x="72" y="191" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6KD-gM-OOe" secondAttribute="height" multiplier="142:15" constant="-148.66666666666669" id="3d2-Le-XAl"/>
+                                    <constraint firstAttribute="height" constant="40" id="4Kl-i0-cwj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aKT-ZY-A7s" id="v18-t1-C5I"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-dg-rwq">
+                                <rect key="frame" x="165.5" y="239" width="43" height="34"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.18493440270396277" green="0.43067619435080284" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickEnterBtn:" destination="aKT-ZY-A7s" eventType="touchUpInside" id="mVZ-l5-7tv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40936168745086809" green="1" blue="0.60193617042610259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6KD-gM-OOe" firstAttribute="centerX" secondItem="kx2-YB-NOC" secondAttribute="centerX" id="4YP-zi-Ejz"/>
+                            <constraint firstItem="b8O-dg-rwq" firstAttribute="centerX" secondItem="6KD-gM-OOe" secondAttribute="centerX" id="D1P-zz-Ofk"/>
+                            <constraint firstItem="6KD-gM-OOe" firstAttribute="top" secondItem="fGJ-k5-rpr" secondAttribute="bottom" constant="171" id="j6h-S3-5sX"/>
+                            <constraint firstItem="b8O-dg-rwq" firstAttribute="top" secondItem="6KD-gM-OOe" secondAttribute="bottom" constant="8" id="m6J-Ln-un4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterBtn" destination="b8O-dg-rwq" id="Ufn-UQ-XyI"/>
+                        <outlet property="psdTxtFild" destination="6KD-gM-OOe" id="Pmw-2y-lKa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz2-KB-lVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816.79999999999995" y="136.28185907046478"/>
         </scene>
     </scenes>
 </document>

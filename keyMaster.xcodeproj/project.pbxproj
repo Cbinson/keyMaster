@@ -13,6 +13,7 @@
 		CFB855321E7D99220024F4C5 /* keyMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB855301E7D99220024F4C5 /* keyMaster.xcdatamodeld */; };
 		CFB855341E7D99220024F4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB855331E7D99220024F4C5 /* Assets.xcassets */; };
 		CFB855371E7D99220024F4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB855351E7D99220024F4C5 /* LaunchScreen.storyboard */; };
+		CFB855411E7E7D710024F4C5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB855401E7E7D710024F4C5 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CFB855331E7D99220024F4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB855361E7D99220024F4C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB855381E7D99220024F4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB855401E7E7D710024F4C5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				CFB855291E7D99220024F4C5 /* AppDelegate.swift */,
 				CFB8552B1E7D99220024F4C5 /* ViewController.swift */,
+				CFB855401E7E7D710024F4C5 /* LogInViewController.swift */,
 				CFB8552D1E7D99220024F4C5 /* Main.storyboard */,
 				CFB855331E7D99220024F4C5 /* Assets.xcassets */,
 				CFB855351E7D99220024F4C5 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB855411E7E7D710024F4C5 /* LogInViewController.swift in Sources */,
 				CFB8552C1E7D99220024F4C5 /* ViewController.swift in Sources */,
 				CFB855321E7D99220024F4C5 /* keyMaster.xcdatamodeld in Sources */,
 				CFB8552A1E7D99220024F4C5 /* AppDelegate.swift in Sources */,

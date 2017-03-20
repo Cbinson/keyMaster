@@ -8,12 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UITextFieldDelegate {
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let loginQueue = DispatchQueue(label: "binson.keyMaster.queue")
+        loginQueue.async { 
+            let logInVC = self.storyboard?.instantiateViewController(withIdentifier: "LogInVC")
+            self.present(logInVC!, animated: true, completion: nil)
+        }
+        
+        
+        
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
