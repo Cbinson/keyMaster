@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class LogInViewController: UIViewController, UITextFieldDelegate {
     
