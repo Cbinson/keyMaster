@@ -99,7 +99,7 @@
 				TargetAttributes = {
 					CFB855251E7D99220024F4C5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HMJCA92VBJ;
+						DevelopmentTeam = TVFFD9C8WQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,7 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HMJCA92VBJ;
+				DEVELOPMENT_TEAM = TVFFD9C8WQ;
 				INFOPLIST_FILE = keyMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = robinson.keyMaster;
@@ -278,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HMJCA92VBJ;
+				DEVELOPMENT_TEAM = TVFFD9C8WQ;
 				INFOPLIST_FILE = keyMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = robinson.keyMaster;
@@ -306,6 +306,7 @@
 				CFB8553D1E7D99220024F4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
