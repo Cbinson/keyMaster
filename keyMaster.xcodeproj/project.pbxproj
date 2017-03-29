@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF02A6271E86D09B005CA34A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF02A6261E86D09B005CA34A /* CoreData.framework */; };
+		CF02A6291E86D0B5005CA34A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF02A6281E86D0B5005CA34A /* libsqlite3.tbd */; };
+		CF02A62B1E86D0BB005CA34A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF02A62A1E86D0BB005CA34A /* libsqlite3.0.tbd */; };
+		CF02A6311E87A0F8005CA34A /* AddKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A6301E87A0F7005CA34A /* AddKeyViewController.swift */; };
+		CF02A6331E87AA84005CA34A /* DescrptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A6321E87AA84005CA34A /* DescrptionCell.swift */; };
+		CF02A6351E87AAB3005CA34A /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A6341E87AAB3005CA34A /* AccountCell.swift */; };
+		CF02A6371E87AADE005CA34A /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A6361E87AADE005CA34A /* PasswordCell.swift */; };
+		CFB7473D1E80206700F94E4B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB7473C1E80206700F94E4B /* LocalAuthentication.framework */; };
 		CFB8552A1E7D99220024F4C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB855291E7D99220024F4C5 /* AppDelegate.swift */; };
 		CFB8552C1E7D99220024F4C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8552B1E7D99220024F4C5 /* ViewController.swift */; };
 		CFB8552F1E7D99220024F4C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB8552D1E7D99220024F4C5 /* Main.storyboard */; };
 		CFB855321E7D99220024F4C5 /* keyMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB855301E7D99220024F4C5 /* keyMaster.xcdatamodeld */; };
 		CFB855341E7D99220024F4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB855331E7D99220024F4C5 /* Assets.xcassets */; };
 		CFB855371E7D99220024F4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB855351E7D99220024F4C5 /* LaunchScreen.storyboard */; };
+		CFB855411E7E7D710024F4C5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB855401E7E7D710024F4C5 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF02A6261E86D09B005CA34A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CF02A6281E86D0B5005CA34A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CF02A62A1E86D0BB005CA34A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		CF02A6301E87A0F7005CA34A /* AddKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddKeyViewController.swift; sourceTree = "<group>"; };
+		CF02A6321E87AA84005CA34A /* DescrptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescrptionCell.swift; sourceTree = "<group>"; };
+		CF02A6341E87AAB3005CA34A /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		CF02A6361E87AADE005CA34A /* PasswordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		CFB7473C1E80206700F94E4B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		CFB855261E7D99220024F4C5 /* keyMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB855291E7D99220024F4C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB8552B1E7D99220024F4C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +41,7 @@
 		CFB855331E7D99220024F4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB855361E7D99220024F4C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB855381E7D99220024F4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB855401E7E7D710024F4C5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF02A62B1E86D0BB005CA34A /* libsqlite3.0.tbd in Frameworks */,
+				CF02A6291E86D0B5005CA34A /* libsqlite3.tbd in Frameworks */,
+				CF02A6271E86D09B005CA34A /* CoreData.framework in Frameworks */,
+				CFB7473D1E80206700F94E4B /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFB7473B1E80206600F94E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF02A62A1E86D0BB005CA34A /* libsqlite3.0.tbd */,
+				CF02A6281E86D0B5005CA34A /* libsqlite3.tbd */,
+				CF02A6261E86D09B005CA34A /* CoreData.framework */,
+				CFB7473C1E80206700F94E4B /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFB8551D1E7D99220024F4C5 = {
 			isa = PBXGroup;
 			children = (
 				CFB855281E7D99220024F4C5 /* keyMaster */,
 				CFB855271E7D99220024F4C5 /* Products */,
+				CFB7473B1E80206600F94E4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +92,16 @@
 			children = (
 				CFB855291E7D99220024F4C5 /* AppDelegate.swift */,
 				CFB8552B1E7D99220024F4C5 /* ViewController.swift */,
+				CF02A6301E87A0F7005CA34A /* AddKeyViewController.swift */,
+				CFB855401E7E7D710024F4C5 /* LogInViewController.swift */,
 				CFB8552D1E7D99220024F4C5 /* Main.storyboard */,
 				CFB855331E7D99220024F4C5 /* Assets.xcassets */,
 				CFB855351E7D99220024F4C5 /* LaunchScreen.storyboard */,
 				CFB855381E7D99220024F4C5 /* Info.plist */,
 				CFB855301E7D99220024F4C5 /* keyMaster.xcdatamodeld */,
+				CF02A6321E87AA84005CA34A /* DescrptionCell.swift */,
+				CF02A6341E87AAB3005CA34A /* AccountCell.swift */,
+				CF02A6361E87AADE005CA34A /* PasswordCell.swift */,
 			);
 			path = keyMaster;
 			sourceTree = "<group>";
@@ -140,9 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF02A6371E87AADE005CA34A /* PasswordCell.swift in Sources */,
+				CF02A6331E87AA84005CA34A /* DescrptionCell.swift in Sources */,
+				CFB855411E7E7D710024F4C5 /* LogInViewController.swift in Sources */,
 				CFB8552C1E7D99220024F4C5 /* ViewController.swift in Sources */,
 				CFB855321E7D99220024F4C5 /* keyMaster.xcdatamodeld in Sources */,
 				CFB8552A1E7D99220024F4C5 /* AppDelegate.swift in Sources */,
+				CF02A6351E87AAB3005CA34A /* AccountCell.swift in Sources */,
+				CF02A6311E87A0F8005CA34A /* AddKeyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
