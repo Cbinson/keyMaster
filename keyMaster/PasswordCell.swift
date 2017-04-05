@@ -8,11 +8,33 @@
 
 import UIKit
 
-class PasswordCell: UITableViewCell {
+class PasswordCell: UITableViewCell, UITextFieldDelegate {
 
+    @IBOutlet weak var passwordTxtField: UITextField!
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.passwordTxtField.delegate = self
+        self.passwordTxtField.returnKeyType = .done
+        self.passwordTxtField.placeholder = "請輸入密碼"
+
+        self.resignFirstResponder()
+    }
+
+
+    //MARK: textfield delegate
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        self.passwordTxtField.text = textField.text
+    }
+
+
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+
+        return true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

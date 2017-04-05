@@ -92,5 +92,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+
+    public func application(_ application: UIApplication, handleOpen url: URL) -> Bool
+    {
+        
+        return true
+    }
+
 }
 
